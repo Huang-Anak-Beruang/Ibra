@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Digital Ibra Maulana Irdamsyah - Mahasiswa D3 Teknik Elektro Industri PENS. Berfokus pada Measurement, Instrumentation & Control Systems, ETAP, PLC, SCADA, dan Analisis Sistem Tenaga.">
+  <meta name="keywords" content="Ibra Maulana Irdamsyah, Electrical Engineer, Instrumentation and Control, ETAP, PENS, Field Engineer, PLC Omron, SCADA, PLN, Oil and Gas">
+  <meta name="author" content="Ibra Maulana Irdamsyah">
+
+  <title>Ibra Maulana Irdamsyah | Industrial Electrical Engineer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Technical Grid & Ambient Glows -->
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       NAVIGATION BAR
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-badge">IM</span>
+        <div class="brand-text">
+          <span class="brand-name">Ibra Maulana I.</span>
+          <span class="brand-sub">Electrical & Control</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Right Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark/Light) -->
+        <button class="btn-icon" id="theme-toggle-btn" title="Ganti Mode Tampilan" aria-label="Ganti Mode Tampilan">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Print/Download CV Trigger -->
+        <button class="btn btn-primary btn-sm" onclick="window.printPortfolioCV()" title="Cetak atau Simpan Resume sebagai PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Unduh CV</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="btn-icon mobile-toggle" id="mobile-toggle-btn" aria-label="Menu Navigasi">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       1. HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="status-pill">
+            <span class="status-dot"></span>
+            Siap untuk Peluang Field / Electrical Engineer
+          </span>
+          <span class="badge-pens">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            PENS Surabaya • NRP: 2325500011
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Ibra Maulana <br>
+          <span class="highlight-gradient">Irdamsyah</span>
+        </h1>
+
+        <p class="hero-role">
+          Industrial Electrical Engineering Student | Focused on Measurement, Instrumentation & Control Systems
+        </p>
+
+        <p class="hero-tagline">
+          "Mengintegrasikan analisis kelistrikan presisi dengan solusi industri yang praktis."
+        </p>
+
+        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 580px;">
+          Mahasiswa D3 Teknik Elektro Industri PENS dengan fokus pada pemodelan sistem tenaga listrik (ETAP), 
+          pemrograman kendali otomatis (PLC Omron/Cx-Programmer), serta memiliki pengalaman langsung di lantai 
+          pabrik sebagai operator mesin di PT Sumber Energy Industry.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Jelajahi Proyek
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Hubungi Saya
+          </a>
+          <a href="https://wa.me/6288235535633?text=Halo%20Ibra,%20saya%20tertarik%20dengan%20portofolio%20Anda." target="_blank" rel="noopener noreferrer" class="btn btn-amber">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Engineering Spec Board -->
+      <div class="hero-card-wrapper">
+        <div class="spec-board">
+          <div class="spec-header">
+            <div class="spec-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              ENGINEERING PROFILE
+            </div>
+            <span class="spec-code">SYS-VER 2026.1</span>
+          </div>
+
+          <div class="spec-list">
+            <div class="spec-item">
+              <div class="spec-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div class="spec-details">
+                <span class="spec-label">Spesialisasi Inti</span>
+                <span class="spec-val">Measurement, Instrumentation & Control</span>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <div class="spec-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <div class="spec-details">
+                <span class="spec-label">Target Sektor</span>
+                <span class="spec-val">Oil & Gas (Offshore), PLTU / PLTGU & PLN</span>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <div class="spec-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="spec-details">
+                <span class="spec-label">Software Utama</span>
+                <span class="spec-val">ETAP (v19/21/24), Cx-Programmer, KiCAD</span>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <div class="spec-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="spec-details">
+                <span class="spec-label">Pengalaman Lapangan</span>
+                <span class="spec-val">Operator Mesin (PT Sumber Energy Industry)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec-footer">
+            <div class="achievement-preview">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              <span>Semifinalis Electra 14 (PLN Nusantara Power & ITS)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Engineering Metrics Strip -->
+  <section class="metrics-strip">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <span class="metric-num">3 Versi</span>
+          <span class="metric-label">Kemahiran ETAP (v19, 21, 24)</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">PLC & SCADA</span>
+          <span class="metric-label">Kendali Otomasi & Ladder Logic</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">Riil Lapangan</span>
+          <span class="metric-label">Pengalaman Operator PT Sumber Energy Industry</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">Tingkat Nasional</span>
+          <span class="metric-label">Prestasi Kompetisi Elektrikal PLN NP & ITS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       2. ABOUT ME SECTION
+       =================================================================== -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Profil Profesional</span>
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-subtitle">Latar belakang pendidikan teknik, pengalaman praktis di industri, serta motivasi di sektor energi.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="about-lead">
+            Halo, saya <strong>Ibra Maulana Irdamsyah</strong>. Saat ini saya sedang menempuh pendidikan 
+            <strong>D3 Teknik Elektro Industri</strong> di <strong>Politeknik Elektronika Negeri Surabaya (PENS)</strong>. 
+            Saya memiliki ketertarikan yang kuat di bidang <em>measurement, instrumentation, and control system</em>, 
+            dengan aspirasi utama untuk berkarir sebagai <strong>Field Engineer</strong> di industri kelautan (offshore), 
+            sektor Oil & Gas, maupun sistem pembangkit tenaga listrik seperti PLTU/PLTGU dan jaringan transmisi/distribusi PLN.
+          </p>
+
+          <p class="about-body">
+            Dalam perjalanan akademik dan pengalaman praktis, saya terbiasa merancang, menyimulasikan, dan menganalisis 
+            sistem kelistrikan menggunakan berbagai perangkat lunak standar industri seperti <strong>ETAP</strong> 
+            (analisis aliran daya dan hubung singkat), <strong>SCADA</strong>, serta <strong>Cx-Programmer</strong> 
+            (logika otomasi PLC Omron).
+          </p>
+
+          <p class="about-body">
+            Saya juga memiliki pengalaman kerja langsung sebagai <strong>operator mesin di PT Sumber Energy Industry</strong> 
+            yang memperkuat pemahaman saya tentang kondisi riil di lantai pabrik, pentingnya prosedur keselamatan kerja (K3), 
+            dan kecepatan respon penanganan gangguan. Saya senang menyelesaikan masalah terkait <em>troubleshooting</em> 
+            kelistrikan, otomasi industri, dan integrasi energi terbarukan, dengan visi jangka panjang menjadi insinyur yang 
+            memberikan dampak nyata dan berkelanjutan di sektor energi.
+          </p>
+        </div>
+
+        <div class="about-cards-col">
+          <div class="about-stat-card">
+            <div class="stat-card-head">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <h3 class="stat-card-title">Institusi Pendidikan</h3>
+            </div>
+            <p class="stat-card-desc">
+              Politeknik Elektronika Negeri Surabaya (PENS)<br>
+              <span style="font-family: var(--font-mono); color: var(--electric-cyan); font-size: 0.8rem;">D3 Teknik Elektro Industri (NRP: 2325500011)</span>
+            </p>
+          </div>
+
+          <div class="about-stat-card">
+            <div class="stat-card-head">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <h3 class="stat-card-title">Pengalaman Industri Nyata</h3>
+            </div>
+            <p class="stat-card-desc">
+              Operator Mesin di <strong>PT Sumber Energy Industry</strong>.<br>
+              Mengoperasikan mesin produksi manufaktur dan memahami dinamika operasional di lapangan.
+            </p>
+          </div>
+
+          <div class="about-stat-card">
+            <div class="stat-card-head">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <h3 class="stat-card-title">Karier Impian & Fokus</h3>
+            </div>
+            <p class="stat-card-desc">
+              Field Engineer di fasilitas Offshore Oil & Gas, Pembangkitan Listrik (PLTU/PLTGU), dan PT PLN (Persero).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. SKILLS SECTION
+       =================================================================== -->
+  <section class="section-padding" id="skills" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Technical Proficiencies</span>
+        <h2 class="section-title">Keahlian & Kompetensi Teknik</h2>
+        <p class="section-subtitle">Dikelompokkan berdasarkan domain rekayasa sistem tenaga, kontrol otomasi industri, dan perangkat keras.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Domain 1: Electrical Simulation & Design -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="domain-title">Electrical Simulation & Design</h3>
+          </div>
+          <div class="skill-tags-flow">
+            <span class="skill-chip featured">⚡ ETAP (v19, 21, 24)</span>
+            <span class="skill-chip">Load Flow Study</span>
+            <span class="skill-chip">Short Circuit Analysis</span>
+            <span class="skill-chip">PSIM (Circuit Simulation)</span>
+            <span class="skill-chip">KiCAD (PCB Design)</span>
+            <span class="skill-chip">AutoCAD (Electrical Drafting)</span>
+          </div>
+        </div>
+
+        <!-- Domain 2: Automation & Control Systems -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3 class="domain-title">Automation & Control Systems</h3>
+          </div>
+          <div class="skill-tags-flow">
+            <span class="skill-chip featured">⚙️ Cx-Programmer (PLC Omron)</span>
+            <span class="skill-chip">Ladder Diagram Logic</span>
+            <span class="skill-chip">SCADA (Monitoring & Supervisory)</span>
+            <span class="skill-chip">DCS (Distributed Control)</span>
+            <span class="skill-chip">Interlocking & Safety Logic</span>
+          </div>
+        </div>
+
+        <!-- Domain 3: Hardware, Sensor & Database -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 class="domain-title">Hardware, Sensor & Database</h3>
+          </div>
+          <div class="skill-tags-flow">
+            <span class="skill-chip">Arduino Prototyping</span>
+            <span class="skill-chip">Integrasi Sensor Gas (MQ7)</span>
+            <span class="skill-chip">Buck/Boost Converter Circuit</span>
+            <span class="skill-chip">Flip-Flop Logic Circuit</span>
+            <span class="skill-chip">MySQL Database</span>
+            <span class="skill-chip">Troubleshooting Kelistrikan</span>
+          </div>
+        </div>
+
+        <!-- Domain 4: Professional & Soft Skills -->
+        <div class="skill-domain-card">
+          <div class="domain-header">
+            <div class="domain-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="domain-title">Transferable & Field Soft Skills</h3>
+          </div>
+          <div class="skill-tags-flow">
+            <span class="skill-chip featured">Teaching (Tutor Fisika & Matematika)</span>
+            <span class="skill-chip">Public Speaking & MC Formal</span>
+            <span class="skill-chip">Event Management</span>
+            <span class="skill-chip">Kerja Tim & Analisis FGD</span>
+            <span class="skill-chip">Ketelitian & K3 Awareness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. FEATURED PROJECTS SECTION
+       =================================================================== -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Engineering Showcase</span>
+        <h2 class="section-title">Portofolio Proyek & Studi Kasus</h2>
+        <p class="section-subtitle">Kompilasi proyek analisis sistem tenaga listrik, otomasi proses, riset migas, dan desain perangkat keras.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+        <button class="filter-btn" data-filter="power">Power Systems & ETAP</button>
+        <button class="filter-btn" data-filter="automation">Otomasi & PLC</button>
+        <button class="filter-btn" data-filter="hardware">Hardware, EBT & Riset</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: ETAP (PINNED / PRIMARY FEATURED) -->
+        <div class="project-card featured-project" data-category="power">
+          <div>
+            <div class="project-top">
+              <span class="project-type-tag">Power Systems & Grid Analysis</span>
+              <span class="project-pinned-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                PROYEK UTAMA
+              </span>
+            </div>
+
+            <h3 class="project-title">Analisis Aliran Daya dan Hubung Singkat menggunakan ETAP</h3>
+            
+            <p class="project-overview">
+              Simulasi komprehensif sistem tenaga listrik industri untuk memastikan keandalan distribusi daya, 
+              memetakan profil tegangan bus (Load Flow), menghitung arus gangguan hubung singkat (Short Circuit Analysis), 
+              serta merumuskan solusi kestabilan jaringan melalui Forum Group Discussion (FGD).
+            </p>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Versi:</span>
+                <span class="meta-val">ETAP Versi 19, 21, dan 24</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Peran:</span>
+                <span class="meta-val">Electrical Engineering Student / Power System Analyst</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Lingkup:</span>
+                <span class="meta-val">Load Flow Analysis, Short Circuit Study, SLD Modeling, FGD</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span class="tech-tag">ETAP v19/21/24</span>
+              <span class="tech-tag">Single Line Diagram</span>
+              <span class="tech-tag">Load Flow Study</span>
+              <span class="tech-tag">Short Circuit Study</span>
+              <span class="tech-tag">FGD Technical Analysis</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm view-detail-btn" data-project="etap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Lihat Detail Rekayasa
+            </button>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim);">Dokumentasi Teknis Siap</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Riset Turbin Angin Migas -->
+        <div class="project-card" data-category="hardware">
+          <div>
+            <div class="project-top">
+              <span class="project-type-tag">Renewable Energy & Oil and Gas</span>
+            </div>
+
+            <h3 class="project-title">Riset Turbin Angin untuk Energi Berkelanjutan di Sektor Migas</h3>
+            
+            <p class="project-overview">
+              Penelitian mengenai potensi penerapan teknologi turbin angin lepas pantai (offshore) dan darat 
+              sebagai sumber energi terbarukan mandiri untuk memenuhi kebutuhan suplai daya operasional perusahaan Oil & Gas.
+            </p>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Target:</span>
+                <span class="meta-val">Fasilitas Offshore / Onshore Oil & Gas</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Peran:</span>
+                <span class="meta-val">Technical Researcher</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Fokus:</span>
+                <span class="meta-val">Transisi Energi Bersih, Efisiensi Daya Operasional</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span class="tech-tag">Offshore Wind Energy</span>
+              <span class="tech-tag">Oil & Gas Facilities</span>
+              <span class="tech-tag">Power Efficiency</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-secondary btn-sm view-detail-btn" data-project="turbin">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Detail Spesifikasi
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Cx-Programmer Liquid Filling System -->
+        <div class="project-card" data-category="automation">
+          <div>
+            <div class="project-top">
+              <span class="project-type-tag">Automation & Industrial Control</span>
+            </div>
+
+            <h3 class="project-title">Sistem Monitoring Rangkaian Automatic Liquid Filling System</h3>
+            
+            <p class="project-overview">
+              Perancangan sistem otomasi pengisian cairan industri menggunakan PLC Omron dengan pemrograman Ladder Diagram 
+              pada Cx-Programmer, dilengkapi integrasi sistem monitoring level cairan dan pengaman sekuensial.
+            </p>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Software:</span>
+                <span class="meta-val">Cx-Programmer (PLC Omron)</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Peran:</span>
+                <span class="meta-val">Control System Designer & Logic Programmer</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Fitur:</span>
+                <span class="meta-val">Monitoring Real-time, Kontrol Level, Interlock Safety</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span class="tech-tag">Cx-Programmer</span>
+              <span class="tech-tag">Omron PLC</span>
+              <span class="tech-tag">Ladder Diagram</span>
+              <span class="tech-tag">Sensor Interfacing</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-secondary btn-sm view-detail-btn" data-project="plc">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Detail Spesifikasi
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Green School Miniatur PLTS & Smart Parking -->
+        <div class="project-card" data-category="hardware">
+          <div>
+            <div class="project-top">
+              <span class="project-type-tag">Renewable Energy & Microcontroller</span>
+            </div>
+
+            <h3 class="project-title">Miniatur Green School Terintegrasi PLTS dan Sistem Parkir Otomatis</h3>
+            
+            <p class="project-overview">
+              Purwarupa fasilitas bangunan ramah lingkungan mandiri energi bertenaga surya (PLTS) dengan otomasi palang 
+              parkir berbasis mikrokontroler Arduino dan integrasi sensor pendeteksi kendaraan.
+            </p>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Perangkat:</span>
+                <span class="meta-val">Panel Surya (PLTS), Arduino, Sensor Deteksi</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Peran:</span>
+                <span class="meta-val">Hardware Integrator / Programmer</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Hasil:</span>
+                <span class="meta-val">Purwarupa beroperasi mandiri sesuai spesifikasi desain</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span class="tech-tag">PLTS Mini</span>
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">Sensor Deteksi</span>
+              <span class="tech-tag">Smart Facility</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-secondary btn-sm view-detail-btn" data-project="greenschool">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Detail Spesifikasi
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: KiCAD DC-DC Converter & Flip Flop -->
+        <div class="project-card" data-category="hardware">
+          <div>
+            <div class="project-top">
+              <span class="project-type-tag">Hardware & PCB Design</span>
+            </div>
+
+            <h3 class="project-title">Desain Konverter Daya DC-DC (Buck/Boost) & Sirkuit Flip-Flop</h3>
+            
+            <p class="project-overview">
+              Perancangan skematik dan tata letak PCB 2-layer menggunakan KiCAD untuk modul konverter tegangan daya 
+              (Buck, Boost, Buck-Boost Converter) dan sirkuit bistable multivibrator Flip-Flop.
+            </p>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Software:</span>
+                <span class="meta-val">KiCAD (Eeschema & Pcbnew), PSIM</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Peran:</span>
+                <span class="meta-val">Hardware & PCB Layout Designer</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Hasil:</span>
+                <span class="meta-val">Desain lolos verifikasi DRC & siap difabrikasi</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span class="tech-tag">KiCAD</span>
+              <span class="tech-tag">PCB Layout</span>
+              <span class="tech-tag">Buck-Boost</span>
+              <span class="tech-tag">Power Electronics</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-secondary btn-sm view-detail-btn" data-project="kicad">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Detail Spesifikasi
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. EXPERIENCE SECTION
+       =================================================================== -->
+  <section class="section-padding" id="experience" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Professional & Organizational</span>
+        <h2 class="section-title">Pengalaman Kerja & Organisasi</h2>
+        <p class="section-subtitle">Pengalaman di industri manufaktur, kegiatan pengajaran teknis, serta kepemimpinan acara kampus.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Pengalaman Industri -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3 class="timeline-role">Operator Mesin</h3>
+                <span class="timeline-org">PT Sumber Energy Industry</span>
+              </div>
+              <span class="timeline-period">Pengalaman Industri</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Mengoperasikan mesin manufaktur industri dan memastikan kelancaran alur produksi berjalan stabil sesuai standar operasional (SOP).</li>
+                <li>Memahami kondisi riil lantai pabrik, aspek keselamatan kerja (K3), serta melakukan pengamatan dini terhadap indikasi anomali kerja mesin.</li>
+                <li>Mendukung pemecahan masalah teknis <em>(troubleshooting)</em> pada mesin produksi untuk meminimalkan waktu henti operasional <em>(downtime)</em>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pengajaran / Tutoring -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3 class="timeline-role">Tutor Fisika & Matematika</h3>
+                <span class="timeline-org">Neo Edukasi, Alpha Academy, & IBSIEDU</span>
+              </div>
+              <span class="timeline-period">Pengajaran Teknis</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Membimbing siswa dalam pemahaman konsep fundamental dan lanjutan fisika serta matematika teknik.</li>
+                <li>Mengasah kemampuan komunikasi teknis dua arah, menyederhanakan logika sains rumit, serta membiasakan metode analisis pemecahan masalah yang sistematis.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event & Leadership -->
+        <div class="timeline-item">
+          <div class="timeline-node amber"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3 class="timeline-role">Master of Ceremony & Event Division</h3>
+                <span class="timeline-org">Elin Cup 2025 (HIMA Teknik Elektro Industri PENS)</span>
+              </div>
+              <span class="timeline-period">2025</span>
+            </div>
+            <div class="timeline-desc">
+              <p>Memimpin jalannya acara formal dan non-formal serta mengoordinasikan susunan teknis kegiatan guna menjamin kelancaran manajemen acara.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Volunteer -->
+        <div class="timeline-item">
+          <div class="timeline-node amber"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3 class="timeline-role">Non-technical Volunteer</h3>
+                <span class="timeline-org">PPK Ormawa 2026 E-BIO PENS</span>
+              </div>
+              <span class="timeline-period">2026</span>
+            </div>
+            <div class="timeline-desc">
+              <p>Berkontribusi dalam program pengabdian masyarakat mahasiswa, mendukung koordinasi lapangan dan pelaksanaan kegiatan pemberdayaan berbasis teknologi lingkungan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notulis Media -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <div>
+                <h3 class="timeline-role">Notulis Media Project</h3>
+                <span class="timeline-org">Proyek Media Tim</span>
+              </div>
+              <span class="timeline-period">Akademik / Tim</span>
+            </div>
+            <div class="timeline-desc">
+              <p>Bertanggung jawab dalam merangkum keputusan rapat koordinasi teknis, mendokumentasikan progres kerja, dan menjaga ketepatan alur komunikasi internal tim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. EDUCATION & ACHIEVEMENTS SECTION
+       =================================================================== -->
+  <section class="section-padding" id="education">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Academic & Recognition</span>
+        <h2 class="section-title">Pendidikan & Prestasi</h2>
+        <p class="section-subtitle">Rekam jejak studi formal serta capaian kompetisi rekayasa kelistrikan.</p>
+      </div>
+
+      <div class="edu-achieve-grid">
+        <!-- Pendidikan PENS -->
+        <div class="edu-card">
+          <div class="edu-icon-badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3 class="edu-institution">Politeknik Elektronika Negeri Surabaya (PENS)</h3>
+          <p class="edu-degree">D3 Teknik Elektro Industri</p>
+          <p class="edu-nrp">Nomor Registrasi Pokok: 2325500011</p>
+          <p class="edu-details">
+            Fokus Keilmuan: Sistem Tenaga Listrik, Sistem Kontrol & Instrumentasi Industri, Analisis Aliran Daya (ETAP), 
+            Otomasi Pabrik berbasis PLC/SCADA, dan Elektronika Daya Terapan.
+          </p>
+        </div>
+
+        <!-- Prestasi Kunci: Electra 14 -->
+        <div class="achieve-card achieve-highlight-card">
+          <div class="achieve-icon-badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h3 class="edu-institution">Semifinalis Electra 14</h3>
+          <p class="edu-degree" style="color: var(--power-amber);">HIMATEKRO ITS & PT PLN Nusantara Power</p>
+          <p class="edu-nrp">Kompetisi Teknik Elektro Tingkat Nasional</p>
+          <p class="edu-details">
+            Meraih predikat Semifinalis dalam ajang kompetisi kelistrikan bergengsi yang diselenggarakan oleh 
+            Teknik Elektro ITS bekerjasama dengan <strong>PT PLN Nusantara Power</strong>. Membuktikan kompetensi analitis 
+            sistem ketenagalistrikan yang teruji di hadapan praktisi industri pembangkitan listrik nasional.
+          </p>
+        </div>
+
+        <!-- SMAN 8 Surabaya -->
+        <div class="edu-card" style="grid-column: span 2;">
+          <div class="edu-icon-badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="edu-institution">SMAN 8 Surabaya</h3>
+          <p class="edu-degree">Lulusan Sekolah Menengah Atas</p>
+          <p class="edu-details">
+            Aktif dalam organisasi kepemudaan dan sekolah sebagai <strong>Sekretaris Arjuna Srikandi A13</strong>, 
+            mengembangkan integritas administrasi dan kepemimpinan sejak bangku sekolah menengah.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7. CONTACT SECTION
+       =================================================================== -->
+  <section class="section-padding" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Communication & Networking</span>
+        <h2 class="section-title">Mari Terhubung</h2>
+        <p class="section-subtitle">Terbuka untuk peluang Field Engineer, Instrumentasi & Kontrol, maupun Sistem Tenaga di industri energi dan kelistrikan.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <!-- WhatsApp Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-left">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Telepon / WhatsApp</span>
+                <br>
+                <a href="https://wa.me/6288235535633" target="_blank" rel="noopener noreferrer" class="contact-val">
+                  +62 882-3553-5633
+                </a>
+              </div>
+            </div>
+            <button class="btn-icon copy-trigger" data-copy="+6288235535633" title="Salin Nomor">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </div>
+
+          <!-- Email Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-left">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email Resmi</span>
+                <br>
+                <a href="mailto:ibra.maulana.irdamsyah@gmail.com" class="contact-val">
+                  ibra.maulana.irdamsyah@gmail.com
+                </a>
+              </div>
+            </div>
+            <button class="btn-icon copy-trigger" data-copy="ibra.maulana.irdamsyah@gmail.com" title="Salin Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-left">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Domisili</span>
+                <br>
+                <span class="contact-val">Surabaya, Jawa Timur, Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-box">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Nama Lengkap</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Contoh: Budi Santoso (HR / Engineering Lead)" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Alamat Email Perusahaan / Pribadi</label>
+              <input type="email" id="form-email" class="form-control" placeholder="nama@perusahaan.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Pesan / Diskusi Peluang</label>
+              <textarea id="form-message" class="form-control" placeholder="Tuliskan tujuan diskusi, peluang kerja, atau pertanyaan teknis Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>Ibra Maulana Irdamsyah</strong> — Industrial Electrical Engineer
+      </div>
+      <div class="footer-note">
+        Politeknik Elektronika Negeri Surabaya (PENS) • NRP: 2325500011
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       INTERACTIVE PROJECT TECHNICAL SPECIFICATION MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="project-type-tag" id="modal-badge" style="display: inline-block; margin-bottom: 0.25rem;">SPECS</span>
+          <h3 class="modal-title" id="modal-title">Judul Proyek</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" title="Tutup Modal" aria-label="Tutup Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div>
+          <h4 class="modal-section-title">Latar Belakang Masalah (Problem Statement)</h4>
+          <p class="modal-text" id="modal-problem"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Solusi Rekayasa (Engineering Solution)</h4>
+          <p class="modal-text" id="modal-solution"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Fitur & Analisis Teknis</h4>
+          <ul id="modal-features" style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.65;"></ul>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Teknologi & Perangkat Lunak</h4>
+          <div id="modal-tech" style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.4rem;"></div>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Peran & Tanggung Jawab</h4>
+          <p class="modal-text" id="modal-role"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Alur Proses Pengembangan (Development Process)</h4>
+          <div id="modal-process" style="color: var(--text-muted); line-height: 1.65;"></div>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Hasil Teknis (Result)</h4>
+          <p class="modal-text" id="modal-result"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Tautan Berkas / Demo / Dokumen</h4>
+          <p class="modal-text" id="modal-links" style="font-family: var(--font-mono); color: var(--electric-cyan);"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notice" class="toast-notice" aria-live="polite"></div>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
