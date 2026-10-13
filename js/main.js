@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollEffects();
   initProjectFilters();
+  initVideoFilters();
   initProjectModals();
   initClipboardActions();
   initContactForm();
@@ -497,4 +498,39 @@ function initLightbox() {
     }
   });
 }
+
+/* -------------------------------------------------------------
+ * 10. VIDEO SHOWCASE CATEGORY FILTERING
+ * ------------------------------------------------------------- */
+function initVideoFilters() {
+  const filterBtns = document.querySelectorAll('[data-video-filter]');
+  const videoCards = document.querySelectorAll('.video-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filterVal = btn.getAttribute('data-video-filter');
+
+      videoCards.forEach(card => {
+        const category = card.getAttribute('data-video-category');
+        if (filterVal === 'all' || category === filterVal) {
+          card.style.display = 'flex';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 20);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 200);
+        }
+      });
+    });
+  });
+}
+
 

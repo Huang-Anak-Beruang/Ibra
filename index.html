@@ -849,17 +849,24 @@
         <p class="section-subtitle">Rekaman otentik pengoperasian mesin di lantai industri manufaktur serta demonstrasi simulasi sistem kelistrikan &amp; otomasi.</p>
       </div>
 
+      <!-- Video Category Filter Bar -->
+      <div class="video-filter-bar">
+        <button class="filter-btn active" data-video-filter="all">Semua Video (4)</button>
+        <button class="filter-btn" data-video-filter="field">Lantai Pabrik &amp; K3</button>
+        <button class="filter-btn" data-video-filter="project">Otomasi &amp; Hardware</button>
+      </div>
+
       <div class="video-showcase-grid">
         <!-- Video Card 1: PT Sumber Energy Industry -->
-        <div class="video-card">
+        <div class="video-card" data-video-category="field">
           <div class="video-card-header">
             <div>
               <span class="video-card-subtitle">OPERASIONAL MANUFAKTUR INDUSTRI</span>
-              <h3 class="video-card-title">Pengoperasian Mesin di PT Sumber Energy Industry</h3>
+              <h3 class="video-card-title">Operasional Mesin Manufaktur (PT Sumber Energy Industry)</h3>
             </div>
             <span class="status-pill" style="border-color: rgba(245, 158, 11, 0.4); color: var(--power-amber);">
               <span class="status-dot" style="background: var(--power-amber);"></span>
-              Riil Lapangan
+              Lantai Pabrik &amp; K3
             </span>
           </div>
 
@@ -872,7 +879,7 @@
 
           <div class="video-card-desc">
             <p>
-              Dokumentasi langsung peran sebagai operator mesin industri di <strong>PT Sumber Energy Industry</strong>. 
+              Dokumentasi langsung tugas sebagai operator mesin produksi di <strong>PT Sumber Energy Industry</strong>. 
               Membuktikan pemahaman kondisi kerja riil, kesiapan menghadapi lingkungan pabrik, penerapan K3 secara ketat, 
               dan respon cepat terhadap <em>basic troubleshooting</em> untuk menjaga kelancaran alur produksi.
             </p>
@@ -889,21 +896,60 @@
           </div>
         </div>
 
-        <!-- Video Card 2: Simulation Demo -->
-        <div class="video-card">
+        <!-- Video Card 2: Troubleshooting & Maintenance -->
+        <div class="video-card" data-video-category="field">
           <div class="video-card-header">
             <div>
-              <span class="video-card-subtitle">LOGIKA OTOMASI &amp; ANALISIS SISTEM TENAGA</span>
-              <h3 class="video-card-title">Simulasi Real-Time Ladder Logic &amp; Pemodelan ETAP</h3>
+              <span class="video-card-subtitle">MAINTENANCE &amp; PENANGANAN GANGGUAN</span>
+              <h3 class="video-card-title">Troubleshooting &amp; Maintenance Kelistrikan/Mesin</h3>
             </div>
-            <span class="status-pill">
-              <span class="status-dot"></span>
-              Simulasi Teknis
+            <span class="status-pill" style="border-color: rgba(245, 158, 11, 0.4); color: var(--power-amber);">
+              <span class="status-dot" style="background: var(--power-amber);"></span>
+              Troubleshooting
             </span>
           </div>
 
           <div class="video-player-wrapper">
-            <video class="video-element" controls preload="metadata" poster="assets/images/projects/etap-preview.svg">
+            <video class="video-element" controls preload="metadata" poster="assets/images/projects/kicad-preview.svg">
+              <source src="assets/videos/troubleshooting-mesin.mp4" type="video/mp4">
+              Browser Anda tidak mendukung pemutar video HTML5. Simpan file video Anda di assets/videos/troubleshooting-mesin.mp4.
+            </video>
+          </div>
+
+          <div class="video-card-desc">
+            <p>
+              Dokumentasi metode pelacakan gangguan kelistrikan dan peralatan industri secara sistematis. 
+              Berfokus pada identifikasi sinyal sensorik abnormal, pengetesan kontinuitas jalur daya, 
+              serta langkah perbaikan cepat untuk mengembalikan unit ke kondisi kerja optimal.
+            </p>
+            <ul class="video-highlights-list">
+              <li class="video-highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Pelacakan Akar Masalah (Root Cause Analysis) Sistem Kelistrikan</span>
+              </li>
+              <li class="video-highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Isolasi Jalur Arus Listrik &amp; Verifikasi Keamanan Peralatan</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Video Card 3: Simulation Demo Cx-Programmer PLC -->
+        <div class="video-card" data-video-category="project">
+          <div class="video-card-header">
+            <div>
+              <span class="video-card-subtitle">LOGIKA OTOMASI &amp; KENDALI PROSES</span>
+              <h3 class="video-card-title">Simulasi Otomasi PLC Omron &amp; Ladder Logic (Liquid Filling)</h3>
+            </div>
+            <span class="status-pill">
+              <span class="status-dot"></span>
+              Otomasi &amp; Kontrol
+            </span>
+          </div>
+
+          <div class="video-player-wrapper">
+            <video class="video-element" controls preload="metadata" poster="assets/images/projects/plc-preview.svg">
               <source src="assets/videos/simulasi-otomasi.mp4" type="video/mp4">
               Browser Anda tidak mendukung pemutar video HTML5. Simpan file video Anda di assets/videos/simulasi-otomasi.mp4.
             </video>
@@ -912,7 +958,7 @@
           <div class="video-card-desc">
             <p>
               Demonstrasi eksekusi logika otomasi sekuensial pada <strong>Cx-Programmer</strong> (Work Online Simulator 
-              PLC Omron) serta analisis aliran daya multi-bus dan arus hubung singkat pada software <strong>ETAP</strong>.
+              PLC Omron) untuk Automatic Liquid Filling System terintegrasi sensor batas cairan, interlock keselamatan, timer sekuensial, dan counter.
             </p>
             <ul class="video-highlights-list">
               <li class="video-highlight-item">
@@ -921,7 +967,45 @@
               </li>
               <li class="video-highlight-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Simulasi Aliran Daya &amp; Verifikasi Kapasitas Pemutus ETAP</span>
+                <span>Monitoring I/O Real-Time &amp; Pencegahan Benturan Logika</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Video Card 4: Hardware Green School PLTS & Arduino -->
+        <div class="video-card" data-video-category="project">
+          <div class="video-card-header">
+            <div>
+              <span class="video-card-subtitle">HARDWARE, EMBEDDED &amp; ENERGI TERBARUKAN</span>
+              <h3 class="video-card-title">Demonstrasi Miniatur PLTS &amp; Smart Parking Arduino</h3>
+            </div>
+            <span class="status-pill">
+              <span class="status-dot"></span>
+              Hardware &amp; IoT
+            </span>
+          </div>
+
+          <div class="video-player-wrapper">
+            <video class="video-element" controls preload="metadata" poster="assets/images/projects/greenschool-preview.svg">
+              <source src="assets/videos/demo-greenschool.mp4" type="video/mp4">
+              Browser Anda tidak mendukung pemutar video HTML5. Simpan file video Anda di assets/videos/demo-greenschool.mp4.
+            </video>
+          </div>
+
+          <div class="video-card-desc">
+            <p>
+              Pengujian langsung purwarupa miniatur Green School mandiri energi. Menampilkan operasional sirkuit catu daya 
+              panel surya (PLTS) dan kerja otomatis palang pintu parkir yang merespons deteksi sensor jarak secara akurat.
+            </p>
+            <ul class="video-highlights-list">
+              <li class="video-highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Pemanfaatan Daya PLTS DC Mandiri Skala Purwarupa</span>
+              </li>
+              <li class="video-highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Responsivitas Sensor Ultrasonik &amp; Aktuator Palang Pintu</span>
               </li>
             </ul>
           </div>

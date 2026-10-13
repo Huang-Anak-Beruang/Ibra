@@ -1733,6 +1733,14 @@ textarea.form-control {
 /* ===================================================================
    VIDEO SHOWCASE SECTION (FIELD OPERATIONS & DEMONSTRATIONS)
    =================================================================== */
+.video-filter-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.25rem;
+}
+
 .video-showcase-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
