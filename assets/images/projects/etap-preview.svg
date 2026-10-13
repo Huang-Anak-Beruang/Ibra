@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b172d"/>
+      <stop offset="100%" stop-color="#050a14"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.75"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="340" fill="url(#bg)"/>
+  <rect width="600" height="340" fill="url(#grid)"/>
+
+  <!-- Technical Header Bar -->
+  <rect x="20" y="16" width="560" height="28" rx="4" fill="#0f1f38" stroke="#1e3a66" stroke-width="1"/>
+  <circle cx="36" cy="30" r="4" fill="#38bdf8"/>
+  <text x="48" y="34" fill="#94a3b8" font-family="monospace" font-size="11" font-weight="bold">ETAP POWER SYSTEM MODEL // SLD LOAD FLOW &amp; SHORT CIRCUIT STUDY</text>
+  <text x="490" y="34" fill="#10b981" font-family="monospace" font-size="10">● SOLVED (IEC 60909)</text>
+
+  <!-- Bus 1 (Utility Grid 150 kV) -->
+  <line x1="60" y1="80" x2="220" y2="80" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  <text x="60" y="70" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">BUS 01 [GRID 150 kV]</text>
+  <text x="175" y="70" fill="#94a3b8" font-family="monospace" font-size="9.5">100.0% V</text>
+
+  <!-- Transformer T1 -->
+  <line x1="140" y1="80" x2="140" y2="105" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Circuit Breaker CB-01 -->
+  <rect x="133" y="105" width="14" height="14" fill="#0b172d" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="140" y1="119" x2="140" y2="135" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Trafo symbol -->
+  <circle cx="140" cy="145" r="12" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="140" cy="161" r="12" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <text x="165" y="156" fill="#94a3b8" font-family="monospace" font-size="9">T1: 150/20 kV (30 MVA)</text>
+  <line x1="140" y1="173" x2="140" y2="195" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Bus 2 (Distribution 20 kV) -->
+  <line x1="60" y1="195" x2="540" y2="195" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+  <text x="60" y="212" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="bold">BUS 02 [MAIN INDUSTRIAL SWITCHGEAR 20 kV]</text>
+  <text x="390" y="212" fill="#10b981" font-family="monospace" font-size="10">V = 99.4% (PASS) | Ik" = 24.8 kA</text>
+
+  <!-- Branch 1: Industrial Induction Motor -->
+  <line x1="120" y1="195" x2="120" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="113" y="220" width="14" height="14" fill="#0b172d" stroke="#10b981" stroke-width="2"/>
+  <circle cx="120" cy="265" r="18" fill="#0f1f38" stroke="#38bdf8" stroke-width="2"/>
+  <text x="113" y="270" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">M</text>
+  <text x="75" y="300" fill="#94a3b8" font-family="monospace" font-size="9">Motor Load: 2.5 MW</text>
+
+  <!-- Branch 2: Trafo 2 to LV Bus -->
+  <line x1="300" y1="195" x2="300" y2="225" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="300" cy="235" r="10" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+  <circle cx="300" cy="249" r="10" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="300" y1="259" x2="300" y2="275" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Bus 3 (LV 380V) -->
+  <line x1="240" y1="275" x2="360" y2="275" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <text x="240" y="292" fill="#38bdf8" font-family="monospace" font-size="10">BUS 03 [LV 380 V]</text>
+  <text x="240" y="306" fill="#94a3b8" font-family="monospace" font-size="8.5">Voltage: 98.7% (Stable)</text>
+
+  <!-- Branch 3: Cogeneration / Backup Gen -->
+  <line x1="480" y1="195" x2="480" y2="240" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="480" cy="265" r="18" fill="#0f1f38" stroke="#f59e0b" stroke-width="2"/>
+  <text x="473" y="270" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="bold">G</text>
+  <text x="435" y="300" fill="#94a3b8" font-family="monospace" font-size="9">Gen Sync: 10 MVA</text>
+
+  <!-- Fault Indicator Arrow -->
+  <path d="M 370 160 L 370 190 L 365 183 M 370 190 L 375 183" stroke="#ef4444" stroke-width="2.5" fill="none"/>
+  <rect x="382" y="152" width="180" height="26" rx="3" fill="#3b0707" stroke="#ef4444" stroke-width="1"/>
+  <text x="390" y="169" fill="#fca5a5" font-family="monospace" font-size="9" font-weight="bold">⚡ 3-Phase Short Circuit Fault</text>
+
+  <!-- Watermark / Credit -->
+  <text x="24" y="326" fill="#475569" font-family="monospace" font-size="9">SIMULATED BY: IBRA MAULANA IRDAMSYAH // PENS ELECTRICAL DEPT</text>
+</svg>

@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectModals();
   initClipboardActions();
   initContactForm();
+  initCvModal();
+  initLightbox();
 });
 
 /* -------------------------------------------------------------
@@ -400,3 +402,99 @@ function initContactForm() {
 window.printPortfolioCV = function() {
   window.print();
 };
+
+/* -------------------------------------------------------------
+ * 8. CV PDF VIEWER MODAL
+ * ------------------------------------------------------------- */
+function initCvModal() {
+  const cvModal = document.getElementById('cv-modal');
+  const openNavBtn = document.getElementById('nav-cv-preview-btn');
+  const openHeroBtn = document.getElementById('hero-cv-preview-btn');
+  const closeBtn = document.getElementById('cv-modal-close-btn');
+
+  const openModal = () => {
+    if (cvModal) {
+      cvModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeModal = () => {
+    if (cvModal) {
+      cvModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (openNavBtn) openNavBtn.addEventListener('click', openModal);
+  if (openHeroBtn) openHeroBtn.addEventListener('click', openModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  if (cvModal) {
+    cvModal.addEventListener('click', (e) => {
+      if (e.target === cvModal) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && cvModal && cvModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
+/* -------------------------------------------------------------
+ * 9. SCHEMATIC & IMAGE LIGHTBOX MODAL
+ * ------------------------------------------------------------- */
+function initLightbox() {
+  const lightboxModal = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const closeBtn = document.getElementById('lightbox-close-btn');
+  const triggers = document.querySelectorAll('.lightbox-trigger');
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      const targetImg = trigger.getAttribute('data-img');
+      const fallbackImg = trigger.getAttribute('data-fallback');
+      const caption = trigger.getAttribute('data-caption') || 'Pratinjau Diagram Teknis';
+
+      if (lightboxModal && lightboxImg) {
+        // Test if primary image loads, else fallback
+        const testImg = new Image();
+        testImg.onload = () => {
+          lightboxImg.src = targetImg;
+        };
+        testImg.onerror = () => {
+          lightboxImg.src = fallbackImg;
+        };
+        testImg.src = targetImg;
+
+        if (lightboxCaption) lightboxCaption.textContent = caption;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  const closeLightbox = () => {
+    if (lightboxModal) {
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+  if (lightboxModal) {
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) closeLightbox();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+}
+

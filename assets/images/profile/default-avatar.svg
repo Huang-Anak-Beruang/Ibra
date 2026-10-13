@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1d36"/>
+      <stop offset="50%" stop-color="#091324"/>
+      <stop offset="100%" stop-color="#040812"/>
+    </linearGradient>
+    <radialGradient id="electricHalo" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(56, 189, 248, 0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="20" fill="url(#avatarBg)"/>
+  <circle cx="200" cy="180" r="160" fill="url(#electricHalo)"/>
+
+  <!-- Technical Reticle & Alignment Lines -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#1e3a66" stroke-width="1.5" stroke-dasharray="10,8"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="4,12"/>
+  
+  <!-- Outer Corner Tech Crosshairs -->
+  <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 370 50 L 370 30 L 350 30" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 30 350 L 30 370 L 50 370" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 370 350 L 370 370 L 350 370" fill="none" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Engineer Silhouette with Hard Hat / Field Attire -->
+  <!-- Shoulders & Torso (Wearpack/Field Jacket with Reflective Stripe) -->
+  <path d="M 90 370 C 90 290 130 265 165 255 L 200 270 L 235 255 C 270 265 310 290 310 370 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Reflective Safety Stripe (Silver/Orange) -->
+  <path d="M 120 320 Q 200 340 280 320" fill="none" stroke="#f59e0b" stroke-width="6"/>
+  <path d="M 120 332 Q 200 352 280 332" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+
+  <!-- Neck -->
+  <rect x="180" y="215" width="40" height="45" rx="5" fill="#f1f5f9"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="42" ry="50" fill="#f8fafc"/>
+
+  <!-- Industrial Field Hard Hat (Safety Helmet) -->
+  <path d="M 148 160 C 148 115 165 95 200 95 C 235 95 252 115 252 160 Z" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+  <path d="M 140 160 L 260 160 C 265 160 268 165 264 168 C 250 176 225 180 200 180 C 175 180 150 176 136 168 C 132 165 135 160 140 160 Z" fill="#d97706"/>
+  <!-- Helmet Ridge -->
+  <path d="M 194 95 L 194 160 L 206 160 L 206 95 Z" fill="#b45309"/>
+
+  <!-- PENS Logo / Insignia Badge on Helmet -->
+  <circle cx="200" cy="130" r="9" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+  <polygon points="200,124 206,134 194,134" fill="#ffffff"/>
+
+  <!-- Identification Overlay Tag -->
+  <rect x="75" y="340" width="250" height="34" rx="6" fill="#081426" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="200" y="358" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">IBRA MAULANA IRDAMSYAH</text>
+  <text x="200" y="369" fill="#38bdf8" font-family="monospace" font-size="9" text-anchor="middle">PENS ELECTRICAL DEPT // NRP 2325500011</text>
+</svg>

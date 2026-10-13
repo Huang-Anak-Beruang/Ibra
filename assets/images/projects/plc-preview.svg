@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="plcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071224"/>
+      <stop offset="100%" stop-color="#030814"/>
+    </linearGradient>
+    <pattern id="plcGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#132742" stroke-width="0.75"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="340" fill="url(#plcBg)"/>
+  <rect width="600" height="340" fill="url(#plcGrid)"/>
+
+  <!-- Header Bar -->
+  <rect x="20" y="16" width="560" height="28" rx="4" fill="#0c1b33" stroke="#1e3a66" stroke-width="1"/>
+  <circle cx="36" cy="30" r="4" fill="#10b981"/>
+  <text x="48" y="34" fill="#94a3b8" font-family="monospace" font-size="11" font-weight="bold">CX-PROGRAMMER v9.7 // OMRON CP1E-N40DR-A // LADDER LOGIC RUNNING</text>
+  <text x="500" y="34" fill="#10b981" font-family="monospace" font-size="10">● ONLINE MONITOR</text>
+
+  <!-- Left & Right Power Rails -->
+  <line x1="50" y1="60" x2="50" y2="300" stroke="#38bdf8" stroke-width="4"/>
+  <line x1="550" y1="60" x2="550" y2="300" stroke="#38bdf8" stroke-width="4"/>
+
+  <!-- RUNG 0: Master Start & Interlock -->
+  <text x="25" y="75" fill="#64748b" font-family="monospace" font-size="10">000</text>
+  <line x1="50" y1="78" x2="90" y2="78" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Normally Open Contact (Start 0.00) -->
+  <line x1="90" y1="70" x2="90" y2="86" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="102" y1="70" x2="102" y2="86" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="102" y1="78" x2="150" y2="78" stroke="#38bdf8" stroke-width="2"/>
+  <text x="82" y="66" fill="#38bdf8" font-family="monospace" font-size="9">0.00 [START]</text>
+
+  <!-- Normally Closed Contact (Stop 0.01) -->
+  <line x1="150" y1="70" x2="150" y2="86" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="162" y1="70" x2="162" y2="86" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="148" y1="88" x2="164" y2="68" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="162" y1="78" x2="220" y2="78" stroke="#38bdf8" stroke-width="2"/>
+  <text x="145" y="66" fill="#f59e0b" font-family="monospace" font-size="9">0.01 [E-STOP]</text>
+
+  <!-- Output Coil (Internal Relay W0.00) -->
+  <line x1="220" y1="78" x2="480" y2="78" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="495" cy="78" r="10" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <line x1="505" y1="78" x2="550" y2="78" stroke="#38bdf8" stroke-width="2"/>
+  <text x="475" y="66" fill="#10b981" font-family="monospace" font-size="9.5">W0.00 (SYSTEM ACTIVE)</text>
+
+  <!-- RUNG 1: Bottle Sensor & Conveyor Logic -->
+  <text x="25" y="150" fill="#64748b" font-family="monospace" font-size="10">001</text>
+  <line x1="50" y1="152" x2="90" y2="152" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Contact System Active W0.00 -->
+  <line x1="90" y1="144" x2="90" y2="160" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="102" y1="144" x2="102" y2="160" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="102" y1="152" x2="170" y2="152" stroke="#38bdf8" stroke-width="2"/>
+  <text x="82" y="140" fill="#38bdf8" font-family="monospace" font-size="9">W0.00 [RUN]</text>
+
+  <!-- Normally Open Proximity Sensor 0.02 -->
+  <line x1="170" y1="144" x2="170" y2="160" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="182" y1="144" x2="182" y2="160" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="182" y1="152" x2="260" y2="152" stroke="#38bdf8" stroke-width="2"/>
+  <text x="162" y="140" fill="#38bdf8" font-family="monospace" font-size="9">0.02 [BOTTLE DETECT]</text>
+
+  <!-- Timer Instruction Box TIM 0001 -->
+  <rect x="260" y="132" width="130" height="42" fill="#0e2340" stroke="#38bdf8" stroke-width="1.8" rx="3"/>
+  <text x="270" y="148" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="bold">TIM 0001 (FILLING)</text>
+  <text x="270" y="164" fill="#f59e0b" font-family="monospace" font-size="9">SV: #0050 [5.0 sec]</text>
+  <line x1="390" y1="152" x2="480" y2="152" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="495" cy="152" r="10" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <line x1="505" y1="152" x2="550" y2="152" stroke="#38bdf8" stroke-width="2"/>
+  <text x="470" y="138" fill="#10b981" font-family="monospace" font-size="9.5">100.00 (SOLENOID VALVE)</text>
+
+  <!-- RUNG 2: Liquid Level Limit & Interlock -->
+  <text x="25" y="235" fill="#64748b" font-family="monospace" font-size="10">002</text>
+  <line x1="50" y1="238" x2="140" y2="238" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Normally Open Level Sensor 0.03 -->
+  <line x1="140" y1="230" x2="140" y2="246" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="152" y1="230" x2="152" y2="246" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="152" y1="238" x2="240" y2="238" stroke="#38bdf8" stroke-width="2"/>
+  <text x="125" y="224" fill="#38bdf8" font-family="monospace" font-size="9">0.03 [LEVEL FULL SENSOR]</text>
+
+  <rect x="240" y="220" width="130" height="38" fill="#0e2340" stroke="#10b981" stroke-width="1.8" rx="3"/>
+  <text x="250" y="236" fill="#10b981" font-family="monospace" font-size="10" font-weight="bold">CNT 0002 (BOTTLE COUNT)</text>
+  <text x="250" y="249" fill="#94a3b8" font-family="monospace" font-size="9">PV: 0048 / SV: #0100</text>
+  <line x1="370" y1="238" x2="480" y2="238" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="495" cy="238" r="10" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <line x1="505" y1="238" x2="550" y2="238" stroke="#38bdf8" stroke-width="2"/>
+  <text x="470" y="224" fill="#10b981" font-family="monospace" font-size="9.5">100.01 (CONVEYOR MOTOR)</text>
+
+  <!-- Live Status Bar -->
+  <rect x="20" y="288" width="560" height="34" rx="4" fill="#08172b" stroke="#1e3a66" stroke-width="1"/>
+  <text x="32" y="309" fill="#94a3b8" font-family="monospace" font-size="10">CYCLE SCAN: 3.8 ms</text>
+  <text x="180" y="309" fill="#10b981" font-family="monospace" font-size="10">PUMP PRESSURE: 2.4 BAR (OK)</text>
+  <text x="380" y="309" fill="#38bdf8" font-family="monospace" font-size="10">AUTOMATIC LIQUID FILLING SYSTEM</text>
+</svg>
